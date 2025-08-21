@@ -70,4 +70,5 @@ navigator.virtualKeyboard.overlaysContent = true;
 
 function showVirtualKeyboard(event){
   navigator.virtualKeyboard.show()
+  console.log("work")
 }
