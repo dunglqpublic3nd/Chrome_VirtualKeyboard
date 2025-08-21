@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VirtualKeyboard API Demo</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" type="module"></script>
+    
   </head>
   <body>
     <div class="container">
@@ -20,7 +20,7 @@
       </div>
       <div class="compose">
         <form>
-          <input type="text" virtualKeyboardPolicy="auto" />
+          <input type="text" virtualKeyboardPolicy="manual" onfocus="showVirtualKeyboard(event)" />
           <button type="submit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,5 +39,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
